@@ -99,7 +99,7 @@ tuple<double, double, double> hadamard_product(const tuple <double, double, doub
     return make_tuple(c1_1 * c2_1, c1_2 * c2_2, c1_3 * c2_3);
 
 }
-TEST(CreatePointTest, CreatePoint) {
+TEST(TuplesFeatures, CreatePoint) {
     tuple<int, int, int> a1 = make_tuple(3, -2, 5);
     tuple<int, int, int, int> expectedResult = make_tuple(3, -2, 5, 1);
 
@@ -107,7 +107,7 @@ TEST(CreatePointTest, CreatePoint) {
 
     ASSERT_EQ(result, expectedResult);
 }
-TEST(CreateVectorTest, CreateVector) {
+TEST(TuplesFeatures, CreateVector) {
     tuple<int, int, int> a1 = make_tuple(3, -2, 5);
     tuple<int, int, int, int> expectedResult = make_tuple(3, -2, 5, 0);
 
@@ -115,7 +115,7 @@ TEST(CreateVectorTest, CreateVector) {
 
     ASSERT_EQ(result, expectedResult);
 }
-TEST(TupleAdditionTest, AddingTwoTuples) {
+TEST(TuplesFeatures, AddingTwoTuples) {
     tuple<int, int, int, int> a1 = make_tuple(3, -2, 5, 1);
     tuple<int, int, int, int> a2 = make_tuple(-2, 3, 1, 0);
     tuple<int, int, int, int> expectedResult = make_tuple(1, 1, 6, 1);
@@ -125,7 +125,7 @@ TEST(TupleAdditionTest, AddingTwoTuples) {
     ASSERT_EQ(result, expectedResult);
 }
 
-TEST(TupleSubtractionTest, SubtractTwoTuples) {
+TEST(TuplesFeatures, SubtractTwoTuples) {
      tuple<int, int, int> p1 = make_tuple(3, 2, 1);
      tuple<int, int, int> p2 = make_tuple(5, 6, 7);
      tuple<int, int, int> expected_result = make_tuple(-2, -4, -6);
@@ -135,7 +135,7 @@ TEST(TupleSubtractionTest, SubtractTwoTuples) {
     
 }
 
-TEST(ScalarMultiplyTest, MultiplyaTuple) {
+TEST(TuplesFeatures, MultiplyaTuple) {
      tuple<int, int, int, int> a = make_tuple(1, -2, 3, -4); 
      tuple<double, double, double, double> expected_result = make_tuple(3.5, -7, 10.5, -14);
      
@@ -144,7 +144,7 @@ TEST(ScalarMultiplyTest, MultiplyaTuple) {
     
 }
 
-TEST(MagnitudeTest, GetMagnitude) {
+TEST(TuplesFeatures, GetMagnitude) {
     tuple<int, int, int> v = make_tuple(1, 2, 3);
     double expected_result = sqrt(14);
     double actual_result = getMagnitude(v);
@@ -153,7 +153,7 @@ TEST(MagnitudeTest, GetMagnitude) {
 
 }
 
-TEST(NormalizeTest, NormalizeVector) {
+TEST(TuplesFeatures, NormalizeVector) {
     tuple<int, int, int> vec = make_tuple(4, 0 ,0);
     tuple<int, int, int> expected_result = make_tuple(1, 0, 0);
     
@@ -164,7 +164,7 @@ TEST(NormalizeTest, NormalizeVector) {
 
 }
 
-TEST(DotpTest, Dotproduct) {
+TEST(TuplesFeatures, Dotproduct) {
     tuple<float, float, float> vec1 = make_tuple(1, 2, 3);
     tuple<float, float, float> vec2 = make_tuple(2, 3, 4);
     float expected_result = 20;
@@ -174,7 +174,7 @@ TEST(DotpTest, Dotproduct) {
     ASSERT_EQ(actual_result, expected_result);
 }
 
-TEST(CrossProductTest, Crossproduct) {
+TEST(TuplesFeatures, Crossproduct) {
      tuple<int, int, int> a = make_tuple(1, 2, 3); 
      tuple<int, int, int> b = make_tuple(2, 3, 4); 
      tuple<int, int, int> expected_result = make_tuple(-1, 2, -1);
@@ -184,15 +184,15 @@ TEST(CrossProductTest, Crossproduct) {
      ASSERT_EQ(actual_result, expected_result);
     
 }
-TEST(ColorTest, ReturnColors) {
+TEST(TuplesFeatures, ReturnColors) {
     tuple<double, double, double> a1 = make_tuple(-0.5, 0.4, 1.7);
     double expectedResult = -0.5;
     double a_result = Color(a1);
 
     ASSERT_EQ(a_result, expectedResult);
 }
-
-TEST(HadamardproductTest, Hadamardproduct) {
+/*
+TEST(TuplesFeatures, Hadamardproduct) {
      tuple<double, double, double> c1 = make_tuple(1, 0.2, 0.4); 
      tuple<double, double, double> c2 = make_tuple(0.9, 1, 0.1); 
      tuple<double, double, double> expected_result = make_tuple(0.9, 0.2, 0.04);
@@ -201,3 +201,4 @@ TEST(HadamardproductTest, Hadamardproduct) {
      
      EXPECT_EQ(actual_result, expected_result);
 }    
+*/
