@@ -1,0 +1,1 @@
+/usr/bin/c++ "CMakeFiles/ray-tracer-tests.dir/ray-tracer-tests.cc.o" -o ray-tracer-tests  lib/libgtest_main.a lib/libgtest.a

@@ -1,0 +1,23 @@
+TupleAdditionTest.AddingTwoTuples 24 0.00014999
+TupleSubtractionTest.SubtractTwoTuples 17 0.000211657
+ScalarMultiplyTest.MultiplyaTuple 16 0.000215967
+MagnitudeTest.GetMagnitude 15 0.000230026
+NormalizeTest.NormalizeVector 14 0.000249831
+DotpTest.Dotproduct 13 0.000267648
+CrossProductTest.Crossproduct 12 0.000247751
+ColorTest.ReturnColors 11 0.000228465
+HadamardproductTest.Blendcolors 0 0
+HadamardproductTest.Hadamardproduct 0 0
+CreatePointTest.CreatePoint 1 0.00725614
+CreateVectorTest.CreateVector 1 0.00347506
+TuplesFeatures.CreatePoint 1 0.00710753
+TuplesFeatures.CreateVector 1 0.00417631
+TuplesFeatures.AddingTwoTuples 1 0.00339426
+TuplesFeatures.SubtractTwoTuples 1 0.00321802
+TuplesFeatures.MultiplyaTuple 1 0.00304866
+TuplesFeatures.GetMagnitude 1 0.00298048
+TuplesFeatures.NormalizeVector 1 0.00316393
+TuplesFeatures.Dotproduct 1 0.00305532
+TuplesFeatures.Crossproduct 1 0.00299406
+TuplesFeatures.ReturnColors 1 0.00255044
+---
