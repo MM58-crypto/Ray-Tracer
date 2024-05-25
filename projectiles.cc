@@ -4,26 +4,36 @@
 #include"ray-tracer-tests.cc"
 using namespace std;
 
+//use create point and vectors funcs written yesterday
 class Projectile {
     public:
         tuple <int, int, int> position;
         tuple <int, int, int> velocity;
+
+        Projectile(const tuple<int, int, int>& pos, const tuple<int, int, int>& vel) {
+            position = pos;
+            velocity = vel;
+        }
 };
 
 class Environment {
     public:
         tuple <int, int, int> gravity;
         tuple <int, int, int> wind;
-};
-Projectile proj_obj;
-Environment env_obj;
-/*
-tuple tick(proj_obj, env_obj) {
-    position = proj_obj.position + proj_obj.velocity;
-    velocity = proj_obj.velocity + env_obj.gravity + env_obj.wind;
+        Environment(const tuple<int, int, int>& grav, const tuple<int, int, int>& w) {
+            gravity = grav;
+            wind = w;
+        }
 
+
+};
+
+Projectile tick(const Environment& env_obj, const Projectile& proj_obj) {
+   tuple <int, int, int> new_position = addTuples(proj_obj.position, proj_obj.velocity);
+   tuple <int, int, int> new_velocity = addTuples(proj_obj.position, env_obj.gravity);
+   return Projectile(new_position, new_velocity);
 }
-*/
+
 
 int main() {
 
