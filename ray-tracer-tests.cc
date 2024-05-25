@@ -99,6 +99,7 @@ tuple<double, double, double> hadamard_product(const tuple <double, double, doub
     return make_tuple(c1_1 * c2_1, c1_2 * c2_2, c1_3 * c2_3);
 
 }
+
 TEST(TuplesFeatures, CreatePoint) {
     tuple<int, int, int> a1 = make_tuple(3, -2, 5);
     tuple<int, int, int, int> expectedResult = make_tuple(3, -2, 5, 1);
@@ -183,6 +184,13 @@ TEST(TuplesFeatures, Crossproduct) {
      
      ASSERT_EQ(actual_result, expected_result);
     
+}
+TEST(TuplesFeatures, CreateColor) {
+    tuple<double, double, double> a1 = make_tuple(-0.5, 0.4, 1.7);
+    double expectedResult = -0.5;
+    double result = Color(a1);
+
+    ASSERT_EQ(result, expectedResult);
 }
 TEST(TuplesFeatures, ReturnColors) {
     tuple<double, double, double> a1 = make_tuple(-0.5, 0.4, 1.7);
