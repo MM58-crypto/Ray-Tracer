@@ -89,15 +89,39 @@ double Color(const tuple<double, double ,double>& a1) {
     
     return get<0>(a1);
 }
-// Colors product | Blending colors
-tuple<double, double, double> hadamard_product(const tuple <double, double, double>& c1, const tuple<double, double, double>& c2) {
+//modify it later
+tuple <double, double, double> AddColors(const tuple<double, double, double>& c1, const tuple<double, double, double>& c2) {
+    double c1_1, c1_2, c1_3;
+    double c2_1, c2_2, c2_3;
+    tie(c1_1, c1_2, c1_3) = c1;
+    tie(c2_1, c2_2, c2_3) = c2;
+
+    return make_tuple(c1_1 + c2_1, c1_2 + c2_2, c1_3 + c2_3);
+
+}
+tuple <float, float, float> subtractColors(const tuple<float, float, float>& c1, const tuple<float, float, float>& c2) {
     float c1_1, c1_2, c1_3;
     float c2_1, c2_2, c2_3;
     tie(c1_1, c1_2, c1_3) = c1;
     tie(c2_1, c2_2, c2_3) = c2;
 
-    return make_tuple(c1_1 * c2_1, c1_2 * c2_2, c1_3 * c2_3);
+    return make_tuple(c1_1 - c2_1, c1_2 - c2_2, c1_3 - c2_3);
 
+}
+tuple <double, double, double> ColorScalarMulti(const tuple<double, double, double>& c1) {
+    double c1_1, c1_2, c1_3;
+    tie(c1_1, c1_2, c1_3) = c1;
+
+    return make_tuple(c1_1 * 2, c1_2 * 2, c1_3 * 2);
+
+}
+tuple <double, double, double> hadamard_product(const tuple<double, double, double>& c1 , const tuple<double, double, double>& c2) {
+    double c1_r, c1_g, c1_b;
+    double c2_r, c2_g, c2_b;
+    tie(c1_r, c1_g, c1_b) = c1;
+    tie(c2_r, c2_g, c2_b) = c2;
+
+    return make_tuple(c1_r * c2_r, c1_g * c2_g, c1_b * c2_b);
 }
 
 TEST(TuplesFeatures, CreatePoint) {
@@ -199,14 +223,52 @@ TEST(TuplesFeatures, ReturnColors) {
 
     ASSERT_EQ(a_result, expectedResult);
 }
-/*
+
+TEST(TuplesFeatures, AddColors) {
+    tuple<double, double, double> c1 = make_tuple(0.9, 0.6, 0.75);
+    tuple<double, double, double> c2 = make_tuple(0.7, 0.1, 0.25);
+    tuple<double, double, double> expectedResult = make_tuple(1.6, 0.7, 1.0);
+
+    tuple<double, double, double> result = AddColors(c1, c2);
+
+    ASSERT_EQ(result, expectedResult);
+}
+
+TEST(TuplesFeatures, SubtractColors) {
+    tuple<float, float, float> c1 = make_tuple(0.9, 0.6, 0.75);
+    tuple<float, float, float> c2 = make_tuple(0.7, 0.1, 0.25);
+    tuple<float, float, float> expectedResult = make_tuple(0.2, 0.5, 0.5);
+
+    tuple<float, float, float> result = subtractColors(c1, c2);
+
+    const double epsilon = 1e-6;
+    ASSERT_NEAR(get<0>(result), get<0>(expectedResult), epsilon);
+    ASSERT_NEAR(get<1>(result), get<1>(expectedResult), epsilon);
+    ASSERT_NEAR(get<2>(result), get<2>(expectedResult), epsilon);
+
+
+
+}
+
+TEST(TuplesFeatures, MultiplyColorByScalar) {
+     tuple<double, double, double> c = make_tuple(0.2, 0.3, 0.4);
+     tuple<double, double, double> expected_result = make_tuple(0.4, 0.6, 0.8);
+
+     tuple<double, double, double> actual_result = ColorScalarMulti(c);
+     ASSERT_EQ(actual_result, expected_result);
+
+}
+
 TEST(TuplesFeatures, Hadamardproduct) {
      tuple<double, double, double> c1 = make_tuple(1, 0.2, 0.4); 
      tuple<double, double, double> c2 = make_tuple(0.9, 1, 0.1); 
      tuple<double, double, double> expected_result = make_tuple(0.9, 0.2, 0.04);
      
      tuple<double, double, double> actual_result = hadamard_product(c1,c2);
-     
-     EXPECT_EQ(actual_result, expected_result);
-}    
-*/
+
+     const double epsilon = 1e-6;
+     ASSERT_NEAR(get<0>(actual_result), get<0>(expected_result), epsilon);
+     ASSERT_NEAR(get<1>(actual_result), get<1>(expected_result), epsilon);
+     ASSERT_NEAR(get<2>(actual_result), get<2>(expected_result), epsilon);
+
+}
