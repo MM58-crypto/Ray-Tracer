@@ -124,6 +124,12 @@ tuple <double, double, double> hadamard_product(const tuple<double, double, doub
     return make_tuple(c1_r * c2_r, c1_g * c2_g, c1_b * c2_b);
 }
 
+double createCanvas(const tuple<double, double>& canvas, const double pixel) {
+    double width, height;
+    tie(width, height) = canvas;
+
+}
+
 TEST(TuplesFeatures, CreatePoint) {
     tuple<int, int, int> a1 = make_tuple(3, -2, 5);
     tuple<int, int, int, int> expectedResult = make_tuple(3, -2, 5, 1);
