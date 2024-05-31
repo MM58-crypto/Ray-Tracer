@@ -123,6 +123,32 @@ tuple <double, double, double> hadamard_product(const tuple<double, double, doub
 
     return make_tuple(c1_r * c2_r, c1_g * c2_g, c1_b * c2_b);
 }
+
+class Color {
+    public:
+        double red, green , blue;
+
+        Color(double r, double g, double b) {
+            red = r;
+            green = g;
+            blue = b;
+        }
+};
+
+class Canvas {
+    public:
+        double width;
+        double height;
+        // how to represent pixel?
+
+        Canvas(double w, double h) {
+            width = w;
+            height = h;
+        }
+};
+
+
+
 // should canvas be a class or function -- find out?
 /*double createCanvas(const tuple<double, double>& canvas ) {
   // pixel
