@@ -135,6 +135,7 @@ class Color {
         }
 };
 
+
 class Canvas {
     public:
         double width;
@@ -149,7 +150,7 @@ class Canvas {
 
 
 
-// should canvas be a class or function -- find out?
+// should canvas be a class or function -- find out? prolly a class (ans)
 /*double createCanvas(const tuple<double, double>& canvas ) {
   // pixel
     double width, height;
