@@ -2,6 +2,7 @@
 #include<iostream>
 #include<math.h>
 #include<tuple>
+#include<vector>
 
 using namespace std;
 
@@ -128,7 +129,7 @@ class Color {
     public:
         double red, green , blue;
 
-        Color(double r, double g, double b) {
+        Color(double r= 0, double g = 0 , double b = 0) {
             red = r;
             green = g;
             blue = b;
@@ -141,7 +142,7 @@ class Canvas {
         double width;
         double height;
         // how to represent pixel?
-
+        std::vector<std::vector<double>> pixels;
         Canvas(double w, double h) {
             width = w;
             height = h;
