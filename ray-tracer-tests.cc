@@ -162,7 +162,7 @@ class Canvas {
 
     return get<0>(canvas);
 } */
-double write_pixel(const tuple<double, double>& canvas, double x, double y, const tuple<double, double, double>& color) {
+double write_pixel(Canvas canvas_obj,  double x, double y, Color color_obj) {
     // if statements?
 
 }
@@ -255,19 +255,14 @@ TEST(TuplesFeatures, Crossproduct) {
 
 }
 TEST(TuplesFeatures, CreateColor) {
-    tuple<double, double, double> a1 = make_tuple(-0.5, 0.4, 1.7);
-    double expectedResult = -0.5;
-    double result = colorTuple(a1);
+    Color color(-0.5, 0.4, 1.7);
 
-    ASSERT_EQ(result, expectedResult);
-}
-TEST(TuplesFeatures, ReturnColors) {
-    tuple<double, double, double> a1 = make_tuple(-0.5, 0.4, 1.7);
-    double expectedResult = -0.5;
-    double a_result = colorTuple(a1);
+    ASSERT_EQ(color.red, -0.5);
+    ASSERT_EQ(color.green, 0.4);
+    ASSERT_EQ(color.blue, 1.7);
 
-    ASSERT_EQ(a_result, expectedResult);
 }
+
 
 TEST(TuplesFeatures, AddColors) {
     tuple<double, double, double> c1 = make_tuple(0.9, 0.6, 0.75);
