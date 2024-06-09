@@ -84,7 +84,7 @@ tuple<int, int, int> crossproduct(const tuple<int, int, int>& a, const tuple<int
 
 }
 // Color tuple <-- wrong needs to be fixed
-double Color(const tuple<double, double ,double>& a1) {
+double colorTuple(const tuple<double, double ,double>& a1) {
     double a1_1, a1_2, a1_3;
     tie(a1_1, a1_2, a1_3) = a1;
 
@@ -136,16 +136,17 @@ class Color {
         }
 };
 
-
+// pixel
 class Canvas {
     public:
         double width;
         double height;
         // how to represent pixel?
-        std::vector<std::vector<double>> pixels;
+        std::vector<std::vector<Color>> pixels;
         Canvas(double w, double h) {
             width = w;
             height = h;
+            pixels = std::vector<std::vector<Color>>(height, std::vector<Color>(width, Color(0, 0, 0)));
         }
 };
 
@@ -256,14 +257,14 @@ TEST(TuplesFeatures, Crossproduct) {
 TEST(TuplesFeatures, CreateColor) {
     tuple<double, double, double> a1 = make_tuple(-0.5, 0.4, 1.7);
     double expectedResult = -0.5;
-    double result = Color(a1);
+    double result = colorTuple(a1);
 
     ASSERT_EQ(result, expectedResult);
 }
 TEST(TuplesFeatures, ReturnColors) {
     tuple<double, double, double> a1 = make_tuple(-0.5, 0.4, 1.7);
     double expectedResult = -0.5;
-    double a_result = Color(a1);
+    double a_result = colorTuple(a1);
 
     ASSERT_EQ(a_result, expectedResult);
 }
@@ -317,10 +318,20 @@ TEST(TuplesFeatures, Hadamardproduct) {
 
 }
 TEST(CanvasFeatures, CreateCanvas) {
-     tuple<double, double> canvas = make_tuple(10,20);
-     double expected_result = 10;
-     double actual_result = createCanvas(canvas);
+     //tuple<double, double> canvas = make_tuple(10,20);
+     Canvas canv(10,20);
+     ASSERT_EQ(canv.width, 10);
+     ASSERT_EQ(canv.height, 20);
 
-     ASSERT_EQ(actual_result, expected_result);
+     for (size_t y = 0; y < canv.height; ++y) {
+         for (size_t x = 0; x < canv.width; ++x) {
+             ASSERT_EQ(canv.pixels[y][x].red, 0);
+             ASSERT_EQ(canv.pixels[y][x].green, 0);
+             ASSERT_EQ(canv.pixels[y][x].blue, 0);
+         }
+     }
+    // double actual_result = createCanvas(canvas);
+
+    // ASSERT_EQ(actual_result, expected_result);
 
 }
