@@ -148,24 +148,22 @@ class Canvas {
             height = h;
             pixels = std::vector<std::vector<Color>>(height, std::vector<Color>(width, Color(0, 0, 0)));
         }
-};
-
-
-
-// should canvas be a class or function -- find out? prolly a class (ans)
-/*double createCanvas(const tuple<double, double>& canvas ) {
-  // pixel
-    double width, height;
-
-    tie(width, height) = canvas;
-    // include black pixels rgb(0,0,0)
-
-    return get<0>(canvas);
-} */
-double write_pixel(Canvas canvas_obj,  double x, double y, Color color_obj) {
+        void write_pixel(double x, double y, Color color_obj) {
+    // sets the color of a pixel at a particular position in canvas
     // if statements?
+           if (x>=0 && x < width && y >=0 && y < height) {
+               pixels[y][x] = color_obj;
+           }
+        }
 
-}
+        Color pixel_at(double x , double y) {
+            if (x>=0 && x < width && y >=0 && y < height) {
+               return pixels[y][x];
+           }
+            return Color();
+        }
+
+};
 
 
 
@@ -328,5 +326,14 @@ TEST(CanvasFeatures, CreateCanvas) {
     // double actual_result = createCanvas(canvas);
 
     // ASSERT_EQ(actual_result, expected_result);
+
+}
+TEST(CanvasFeatures, WritePixels) {
+     //tuple<double, double> canvas = make_tuple(10,20);
+     Canvas canv(10,20);
+     Color red(1,0,0);
+
+     canv.write_pixel(2,3,red);
+     ASSERT_EQ(canv.pixel_at(2,3), red);
 
 }
