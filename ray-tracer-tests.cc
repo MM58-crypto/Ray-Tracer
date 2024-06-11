@@ -134,6 +134,17 @@ class Color {
             green = g;
             blue = b;
         }
+        // Equality operator to easily compare colors (c++ == operator can't natively compare user-defined types like objects from classes)
+        bool operator==(const Color& other) const {
+            return red == other.red && green == other.green && blue == other.blue;
+        }
+
+
+    // Friend function to overload the << operator for the Color class
+        friend std::ostream& operator<<(std::ostream& os, const Color& color) {
+            os << "Color(" << color.red << ", " << color.green << ", " << color.blue << ")";
+            return os;
+        }
 };
 
 // pixel
@@ -331,9 +342,13 @@ TEST(CanvasFeatures, CreateCanvas) {
 TEST(CanvasFeatures, WritePixels) {
      //tuple<double, double> canvas = make_tuple(10,20);
      Canvas canv(10,20);
-     Color red(1,0,0);
-
-     canv.write_pixel(2,3,red);
+     Color red(1,0,0); // this is an object
+     //std::cout << "Red color: " << red << std::endl; -- Output: Red color: Color(1, 0 ,0)
+     canv.write_pixel(2, 3, red);
+     //std::cout<< "Pixel at (2, 3) position: " << canv.pixel_at(2,3)<< std::endl;
      ASSERT_EQ(canv.pixel_at(2,3), red);
 
+}
+TEST(CanvasFeatures, ppmHeader) {
+    Canvas canv(5, 3);
 }
