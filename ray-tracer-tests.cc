@@ -173,7 +173,12 @@ class Canvas {
            }
             return Color();
         }
-
+        void canvas_to_ppm(/* Canvas canv(double x, double y) */) {
+            std::cout << "P3 \n";
+            std::cout << width << " "<< height <<  endl;
+            std::cout << "255 \n";
+            //return "P3 \n 255 \n";
+        }
 };
 
 
@@ -351,4 +356,18 @@ TEST(CanvasFeatures, WritePixels) {
 }
 TEST(CanvasFeatures, ppmHeader) {
     Canvas canv(5, 3);
+    canv.canvas_to_ppm();
+}
+TEST(CanvasFeatures, ConstructPPMHeader) {
+    Canvas canv(5, 3);
+    Color c1(1.5, 0, 0);
+    Color c2(0, 0.5, 0);
+    Color c3(-0.5, 0, 1);
+
+    canv.write_pixel(0, 0, c1);
+    canv.write_pixel(2, 1, c2);
+    canv.write_pixel(4, 2, c3);
+
+    canv.canvas_to_ppm();
+
 }
