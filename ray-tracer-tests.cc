@@ -1,4 +1,5 @@
 #include<gtest/gtest.h>
+#include <algorithm>
 #include<iostream>
 #include<math.h>
 #include<tuple>
@@ -178,6 +179,26 @@ class Canvas {
             std::cout << width << " "<< height <<  endl;
             std::cout << "255 \n";
             //return "P3 \n 255 \n";
+            // for loop? (pixel data)
+            for (int h=0; h < height; h++) {
+                for (int w=0; w < width; w++) {
+                    Color pixel = pixel_at(w, h);
+                    int max = 255;
+                    int min = 0;
+                    // clamp is used as max color val is 255 & min color val is 0
+                    int r = std::clamp(static_cast<int>(pixel.red * max), min, max);
+                    int g = std::clamp(static_cast<int>(pixel.green * max), min, max);
+                    int b = std::clamp(static_cast<int>(pixel.blue * max), min, max);
+
+                    std::cout << r << " " << g << " " << b;
+                    // ??
+                    if (w < width - 1) {
+
+                        cout << " ";
+                    }
+                }
+            }
+
         }
 };
 

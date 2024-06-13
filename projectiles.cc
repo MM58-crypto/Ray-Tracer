@@ -7,10 +7,10 @@ using namespace std;
 //use create point and vectors funcs written yesterday
 class Projectile {
     public:
-        tuple <int, int, int> position;
-        tuple <int, int, int> velocity;
+        tuple <int, int, int, int> position;
+        tuple <int, int, int, int> velocity;
 
-        Projectile(const tuple<int, int, int>& pos, const tuple<int, int, int>& vel) {
+        Projectile(const tuple<int, int, int, int>& pos, const tuple<int, int, int, int>& vel) {
             position = pos;
             velocity = vel;
         }
@@ -18,9 +18,9 @@ class Projectile {
 
 class Environment {
     public:
-        tuple <int, int, int> gravity;
-        tuple <int, int, int> wind;
-        Environment(const tuple<int, int, int>& grav, const tuple<int, int, int>& w) {
+        tuple <int, int, int, int> gravity;
+        tuple <int, int, int, int> wind;
+        Environment(const tuple<int, int, int, int>& grav, const tuple<int, int, int, int>& w) {
             gravity = grav;
             wind = w;
         }

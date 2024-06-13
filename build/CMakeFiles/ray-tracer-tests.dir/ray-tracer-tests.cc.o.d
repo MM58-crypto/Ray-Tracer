@@ -235,6 +235,11 @@ CMakeFiles/ray-tracer-tests.dir/ray-tracer-tests.cc.o: \
  /home/mm/my-ray-tracer/build/_deps/googletest-src/googletest/include/gtest/gtest-typed-test.h \
  /home/mm/my-ray-tracer/build/_deps/googletest-src/googletest/include/gtest/gtest_pred_impl.h \
  /home/mm/my-ray-tracer/build/_deps/googletest-src/googletest/include/gtest/gtest_prod.h \
+ /usr/include/c++/13.2.1/algorithm \
+ /usr/include/c++/13.2.1/bits/stl_algo.h \
+ /usr/include/c++/13.2.1/bits/algorithmfwd.h \
+ /usr/include/c++/13.2.1/bits/stl_heap.h \
+ /usr/include/c++/13.2.1/bits/uniform_int_dist.h \
  /usr/include/c++/13.2.1/math.h /usr/include/c++/13.2.1/cmath \
  /usr/include/math.h /usr/include/bits/math-vector.h \
  /usr/include/bits/libm-simd-decl-stubs.h \
