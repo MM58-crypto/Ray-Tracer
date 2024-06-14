@@ -191,12 +191,13 @@ class Canvas {
                     int b = std::clamp(static_cast<int>(pixel.blue * max), min, max);
 
                     std::cout << r << " " << g << " " << b;
-                    // ??
+                    // space between values in the canvas
                     if (w < width - 1) {
 
                         cout << " ";
                     }
                 }
+                cout << "\n";
             }
 
         }
