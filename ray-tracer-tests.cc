@@ -4,6 +4,7 @@
 #include<math.h>
 #include<tuple>
 #include<vector>
+//#include"Canvas_colors.cc"
 
 using namespace std;
 
@@ -379,8 +380,9 @@ TEST(CanvasFeatures, WritePixels) {
 TEST(CanvasFeatures, ppmHeader) {
     Canvas canv(5, 3);
     canv.canvas_to_ppm();
+    //assert_eq
 }
-TEST(CanvasFeatures, ConstructPPMHeader) {
+TEST(CanvasFeatures, ConstructPPMPixelData) {
     Canvas canv(5, 3);
     Color c1(1.5, 0, 0);
     Color c2(0, 0.5, 0);
@@ -391,5 +393,13 @@ TEST(CanvasFeatures, ConstructPPMHeader) {
     canv.write_pixel(4, 2, c3);
 
     canv.canvas_to_ppm();
+    //assert_eq
+}
+TEST(CanvasFeatures, SplitLongLinesPPM) {
+    // ensure pixel data lines do not exceed 70 chars
+    Canvas canv(10, 2);
+    Color c(1, 0.8, 0.6);
 
+    canv.canvas_to_ppm();
+    //assert_eq
 }
