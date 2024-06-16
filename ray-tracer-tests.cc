@@ -5,6 +5,7 @@
 #include<tuple>
 #include<vector>
 //#include"Canvas_colors.cc"
+// find a way to "update" current c++ version (cpp --version: 14?) or use cpp version 17 when compiling
 
 using namespace std;
 
@@ -397,6 +398,8 @@ TEST(CanvasFeatures, ConstructPPMPixelData) {
 }
 TEST(CanvasFeatures, SplitLongLinesPPM) {
     // ensure pixel data lines do not exceed 70 chars
+    // maybe use conditionals or std::clamp for the data lines
+
     Canvas canv(10, 2);
     Color c(1, 0.8, 0.6);
 
