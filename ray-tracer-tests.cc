@@ -6,7 +6,7 @@
 #include<vector>
 //#include"Canvas_colors.cc"
 // find a way to "update" current c++ version (cpp --version: 14?) or use cpp version 17 when compiling
-
+// finish the book
 using namespace std;
 
 // create points

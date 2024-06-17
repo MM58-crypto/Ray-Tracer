@@ -1,10 +1,10 @@
-Start testing: Jun 13 23:55 +03
+Start testing: Jun 17 23:58 +03
 ----------------------------------------------------------
 1/18 Testing: TuplesFeatures.CreatePoint
 1/18 Test: TuplesFeatures.CreatePoint
 Command: "/home/mm/my-ray-tracer/build/ray-tracer-tests" "--gtest_filter=TuplesFeatures.CreatePoint" "--gtest_also_run_disabled_tests"
 Directory: /home/mm/my-ray-tracer/build
-"TuplesFeatures.CreatePoint" start time: Jun 13 23:55 +03
+"TuplesFeatures.CreatePoint" start time: Jun 17 23:58 +03
 Output:
 ----------------------------------------------------------
 Running main() from /home/mm/my-ray-tracer/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -20,10 +20,10 @@ Note: Google Test filter = TuplesFeatures.CreatePoint
 [==========] 1 test from 1 test suite ran. (0 ms total)
 [  PASSED  ] 1 test.
 <end of output>
-Test time =   0.00 sec
+Test time =   0.05 sec
 ----------------------------------------------------------
 Test Passed.
-"TuplesFeatures.CreatePoint" end time: Jun 13 23:55 +03
+"TuplesFeatures.CreatePoint" end time: Jun 17 23:58 +03
 "TuplesFeatures.CreatePoint" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -31,7 +31,7 @@ Test Passed.
 2/18 Test: TuplesFeatures.CreateVector
 Command: "/home/mm/my-ray-tracer/build/ray-tracer-tests" "--gtest_filter=TuplesFeatures.CreateVector" "--gtest_also_run_disabled_tests"
 Directory: /home/mm/my-ray-tracer/build
-"TuplesFeatures.CreateVector" start time: Jun 13 23:55 +03
+"TuplesFeatures.CreateVector" start time: Jun 17 23:58 +03
 Output:
 ----------------------------------------------------------
 Running main() from /home/mm/my-ray-tracer/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -47,10 +47,10 @@ Note: Google Test filter = TuplesFeatures.CreateVector
 [==========] 1 test from 1 test suite ran. (0 ms total)
 [  PASSED  ] 1 test.
 <end of output>
-Test time =   0.00 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"TuplesFeatures.CreateVector" end time: Jun 13 23:55 +03
+"TuplesFeatures.CreateVector" end time: Jun 17 23:58 +03
 "TuplesFeatures.CreateVector" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -58,7 +58,7 @@ Test Passed.
 3/18 Test: TuplesFeatures.AddingTwoTuples
 Command: "/home/mm/my-ray-tracer/build/ray-tracer-tests" "--gtest_filter=TuplesFeatures.AddingTwoTuples" "--gtest_also_run_disabled_tests"
 Directory: /home/mm/my-ray-tracer/build
-"TuplesFeatures.AddingTwoTuples" start time: Jun 13 23:55 +03
+"TuplesFeatures.AddingTwoTuples" start time: Jun 17 23:58 +03
 Output:
 ----------------------------------------------------------
 Running main() from /home/mm/my-ray-tracer/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -77,7 +77,7 @@ Note: Google Test filter = TuplesFeatures.AddingTwoTuples
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"TuplesFeatures.AddingTwoTuples" end time: Jun 13 23:55 +03
+"TuplesFeatures.AddingTwoTuples" end time: Jun 17 23:58 +03
 "TuplesFeatures.AddingTwoTuples" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -85,7 +85,7 @@ Test Passed.
 4/18 Test: TuplesFeatures.SubtractTwoTuples
 Command: "/home/mm/my-ray-tracer/build/ray-tracer-tests" "--gtest_filter=TuplesFeatures.SubtractTwoTuples" "--gtest_also_run_disabled_tests"
 Directory: /home/mm/my-ray-tracer/build
-"TuplesFeatures.SubtractTwoTuples" start time: Jun 13 23:55 +03
+"TuplesFeatures.SubtractTwoTuples" start time: Jun 17 23:58 +03
 Output:
 ----------------------------------------------------------
 Running main() from /home/mm/my-ray-tracer/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -104,7 +104,7 @@ Note: Google Test filter = TuplesFeatures.SubtractTwoTuples
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"TuplesFeatures.SubtractTwoTuples" end time: Jun 13 23:55 +03
+"TuplesFeatures.SubtractTwoTuples" end time: Jun 17 23:58 +03
 "TuplesFeatures.SubtractTwoTuples" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -112,7 +112,7 @@ Test Passed.
 5/18 Test: TuplesFeatures.MultiplyaTuple
 Command: "/home/mm/my-ray-tracer/build/ray-tracer-tests" "--gtest_filter=TuplesFeatures.MultiplyaTuple" "--gtest_also_run_disabled_tests"
 Directory: /home/mm/my-ray-tracer/build
-"TuplesFeatures.MultiplyaTuple" start time: Jun 13 23:55 +03
+"TuplesFeatures.MultiplyaTuple" start time: Jun 17 23:58 +03
 Output:
 ----------------------------------------------------------
 Running main() from /home/mm/my-ray-tracer/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -131,7 +131,7 @@ Note: Google Test filter = TuplesFeatures.MultiplyaTuple
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"TuplesFeatures.MultiplyaTuple" end time: Jun 13 23:55 +03
+"TuplesFeatures.MultiplyaTuple" end time: Jun 17 23:58 +03
 "TuplesFeatures.MultiplyaTuple" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -139,7 +139,7 @@ Test Passed.
 6/18 Test: TuplesFeatures.GetMagnitude
 Command: "/home/mm/my-ray-tracer/build/ray-tracer-tests" "--gtest_filter=TuplesFeatures.GetMagnitude" "--gtest_also_run_disabled_tests"
 Directory: /home/mm/my-ray-tracer/build
-"TuplesFeatures.GetMagnitude" start time: Jun 13 23:55 +03
+"TuplesFeatures.GetMagnitude" start time: Jun 17 23:58 +03
 Output:
 ----------------------------------------------------------
 Running main() from /home/mm/my-ray-tracer/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -158,7 +158,7 @@ Note: Google Test filter = TuplesFeatures.GetMagnitude
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"TuplesFeatures.GetMagnitude" end time: Jun 13 23:55 +03
+"TuplesFeatures.GetMagnitude" end time: Jun 17 23:58 +03
 "TuplesFeatures.GetMagnitude" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -166,7 +166,7 @@ Test Passed.
 7/18 Test: TuplesFeatures.NormalizeVector
 Command: "/home/mm/my-ray-tracer/build/ray-tracer-tests" "--gtest_filter=TuplesFeatures.NormalizeVector" "--gtest_also_run_disabled_tests"
 Directory: /home/mm/my-ray-tracer/build
-"TuplesFeatures.NormalizeVector" start time: Jun 13 23:55 +03
+"TuplesFeatures.NormalizeVector" start time: Jun 17 23:58 +03
 Output:
 ----------------------------------------------------------
 Running main() from /home/mm/my-ray-tracer/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -185,7 +185,7 @@ Note: Google Test filter = TuplesFeatures.NormalizeVector
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"TuplesFeatures.NormalizeVector" end time: Jun 13 23:55 +03
+"TuplesFeatures.NormalizeVector" end time: Jun 17 23:58 +03
 "TuplesFeatures.NormalizeVector" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -193,7 +193,7 @@ Test Passed.
 8/18 Test: TuplesFeatures.Dotproduct
 Command: "/home/mm/my-ray-tracer/build/ray-tracer-tests" "--gtest_filter=TuplesFeatures.Dotproduct" "--gtest_also_run_disabled_tests"
 Directory: /home/mm/my-ray-tracer/build
-"TuplesFeatures.Dotproduct" start time: Jun 13 23:55 +03
+"TuplesFeatures.Dotproduct" start time: Jun 17 23:58 +03
 Output:
 ----------------------------------------------------------
 Running main() from /home/mm/my-ray-tracer/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -212,7 +212,7 @@ Note: Google Test filter = TuplesFeatures.Dotproduct
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"TuplesFeatures.Dotproduct" end time: Jun 13 23:55 +03
+"TuplesFeatures.Dotproduct" end time: Jun 17 23:58 +03
 "TuplesFeatures.Dotproduct" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -220,7 +220,7 @@ Test Passed.
 9/18 Test: TuplesFeatures.Crossproduct
 Command: "/home/mm/my-ray-tracer/build/ray-tracer-tests" "--gtest_filter=TuplesFeatures.Crossproduct" "--gtest_also_run_disabled_tests"
 Directory: /home/mm/my-ray-tracer/build
-"TuplesFeatures.Crossproduct" start time: Jun 13 23:55 +03
+"TuplesFeatures.Crossproduct" start time: Jun 17 23:58 +03
 Output:
 ----------------------------------------------------------
 Running main() from /home/mm/my-ray-tracer/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -239,7 +239,7 @@ Note: Google Test filter = TuplesFeatures.Crossproduct
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"TuplesFeatures.Crossproduct" end time: Jun 13 23:55 +03
+"TuplesFeatures.Crossproduct" end time: Jun 17 23:58 +03
 "TuplesFeatures.Crossproduct" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -247,7 +247,7 @@ Test Passed.
 10/18 Test: TuplesFeatures.CreateColor
 Command: "/home/mm/my-ray-tracer/build/ray-tracer-tests" "--gtest_filter=TuplesFeatures.CreateColor" "--gtest_also_run_disabled_tests"
 Directory: /home/mm/my-ray-tracer/build
-"TuplesFeatures.CreateColor" start time: Jun 13 23:55 +03
+"TuplesFeatures.CreateColor" start time: Jun 17 23:58 +03
 Output:
 ----------------------------------------------------------
 Running main() from /home/mm/my-ray-tracer/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -266,7 +266,7 @@ Note: Google Test filter = TuplesFeatures.CreateColor
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"TuplesFeatures.CreateColor" end time: Jun 13 23:55 +03
+"TuplesFeatures.CreateColor" end time: Jun 17 23:58 +03
 "TuplesFeatures.CreateColor" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -274,7 +274,7 @@ Test Passed.
 11/18 Test: TuplesFeatures.AddColors
 Command: "/home/mm/my-ray-tracer/build/ray-tracer-tests" "--gtest_filter=TuplesFeatures.AddColors" "--gtest_also_run_disabled_tests"
 Directory: /home/mm/my-ray-tracer/build
-"TuplesFeatures.AddColors" start time: Jun 13 23:55 +03
+"TuplesFeatures.AddColors" start time: Jun 17 23:58 +03
 Output:
 ----------------------------------------------------------
 Running main() from /home/mm/my-ray-tracer/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -293,7 +293,7 @@ Note: Google Test filter = TuplesFeatures.AddColors
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"TuplesFeatures.AddColors" end time: Jun 13 23:55 +03
+"TuplesFeatures.AddColors" end time: Jun 17 23:58 +03
 "TuplesFeatures.AddColors" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -301,7 +301,7 @@ Test Passed.
 12/18 Test: TuplesFeatures.SubtractColors
 Command: "/home/mm/my-ray-tracer/build/ray-tracer-tests" "--gtest_filter=TuplesFeatures.SubtractColors" "--gtest_also_run_disabled_tests"
 Directory: /home/mm/my-ray-tracer/build
-"TuplesFeatures.SubtractColors" start time: Jun 13 23:55 +03
+"TuplesFeatures.SubtractColors" start time: Jun 17 23:58 +03
 Output:
 ----------------------------------------------------------
 Running main() from /home/mm/my-ray-tracer/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -320,7 +320,7 @@ Note: Google Test filter = TuplesFeatures.SubtractColors
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"TuplesFeatures.SubtractColors" end time: Jun 13 23:55 +03
+"TuplesFeatures.SubtractColors" end time: Jun 17 23:58 +03
 "TuplesFeatures.SubtractColors" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -328,7 +328,7 @@ Test Passed.
 13/18 Test: TuplesFeatures.MultiplyColorByScalar
 Command: "/home/mm/my-ray-tracer/build/ray-tracer-tests" "--gtest_filter=TuplesFeatures.MultiplyColorByScalar" "--gtest_also_run_disabled_tests"
 Directory: /home/mm/my-ray-tracer/build
-"TuplesFeatures.MultiplyColorByScalar" start time: Jun 13 23:55 +03
+"TuplesFeatures.MultiplyColorByScalar" start time: Jun 17 23:58 +03
 Output:
 ----------------------------------------------------------
 Running main() from /home/mm/my-ray-tracer/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -347,7 +347,7 @@ Note: Google Test filter = TuplesFeatures.MultiplyColorByScalar
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"TuplesFeatures.MultiplyColorByScalar" end time: Jun 13 23:55 +03
+"TuplesFeatures.MultiplyColorByScalar" end time: Jun 17 23:58 +03
 "TuplesFeatures.MultiplyColorByScalar" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -355,7 +355,7 @@ Test Passed.
 14/18 Test: TuplesFeatures.Hadamardproduct
 Command: "/home/mm/my-ray-tracer/build/ray-tracer-tests" "--gtest_filter=TuplesFeatures.Hadamardproduct" "--gtest_also_run_disabled_tests"
 Directory: /home/mm/my-ray-tracer/build
-"TuplesFeatures.Hadamardproduct" start time: Jun 13 23:55 +03
+"TuplesFeatures.Hadamardproduct" start time: Jun 17 23:58 +03
 Output:
 ----------------------------------------------------------
 Running main() from /home/mm/my-ray-tracer/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -374,7 +374,7 @@ Note: Google Test filter = TuplesFeatures.Hadamardproduct
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"TuplesFeatures.Hadamardproduct" end time: Jun 13 23:55 +03
+"TuplesFeatures.Hadamardproduct" end time: Jun 17 23:58 +03
 "TuplesFeatures.Hadamardproduct" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -382,7 +382,7 @@ Test Passed.
 15/18 Test: CanvasFeatures.CreateCanvas
 Command: "/home/mm/my-ray-tracer/build/ray-tracer-tests" "--gtest_filter=CanvasFeatures.CreateCanvas" "--gtest_also_run_disabled_tests"
 Directory: /home/mm/my-ray-tracer/build
-"CanvasFeatures.CreateCanvas" start time: Jun 13 23:55 +03
+"CanvasFeatures.CreateCanvas" start time: Jun 17 23:58 +03
 Output:
 ----------------------------------------------------------
 Running main() from /home/mm/my-ray-tracer/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -401,7 +401,7 @@ Note: Google Test filter = CanvasFeatures.CreateCanvas
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"CanvasFeatures.CreateCanvas" end time: Jun 13 23:55 +03
+"CanvasFeatures.CreateCanvas" end time: Jun 17 23:58 +03
 "CanvasFeatures.CreateCanvas" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -409,7 +409,7 @@ Test Passed.
 16/18 Test: CanvasFeatures.WritePixels
 Command: "/home/mm/my-ray-tracer/build/ray-tracer-tests" "--gtest_filter=CanvasFeatures.WritePixels" "--gtest_also_run_disabled_tests"
 Directory: /home/mm/my-ray-tracer/build
-"CanvasFeatures.WritePixels" start time: Jun 13 23:55 +03
+"CanvasFeatures.WritePixels" start time: Jun 17 23:58 +03
 Output:
 ----------------------------------------------------------
 Running main() from /home/mm/my-ray-tracer/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -428,7 +428,7 @@ Note: Google Test filter = CanvasFeatures.WritePixels
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"CanvasFeatures.WritePixels" end time: Jun 13 23:55 +03
+"CanvasFeatures.WritePixels" end time: Jun 17 23:58 +03
 "CanvasFeatures.WritePixels" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -436,7 +436,7 @@ Test Passed.
 17/18 Test: CanvasFeatures.ppmHeader
 Command: "/home/mm/my-ray-tracer/build/ray-tracer-tests" "--gtest_filter=CanvasFeatures.ppmHeader" "--gtest_also_run_disabled_tests"
 Directory: /home/mm/my-ray-tracer/build
-"CanvasFeatures.ppmHeader" start time: Jun 13 23:55 +03
+"CanvasFeatures.ppmHeader" start time: Jun 17 23:58 +03
 Output:
 ----------------------------------------------------------
 Running main() from /home/mm/my-ray-tracer/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -458,7 +458,7 @@ P3
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"CanvasFeatures.ppmHeader" end time: Jun 13 23:55 +03
+"CanvasFeatures.ppmHeader" end time: Jun 17 23:58 +03
 "CanvasFeatures.ppmHeader" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -466,7 +466,7 @@ Test Passed.
 18/18 Test: CanvasFeatures.ConstructPPMHeader
 Command: "/home/mm/my-ray-tracer/build/ray-tracer-tests" "--gtest_filter=CanvasFeatures.ConstructPPMHeader" "--gtest_also_run_disabled_tests"
 Directory: /home/mm/my-ray-tracer/build
-"CanvasFeatures.ConstructPPMHeader" start time: Jun 13 23:55 +03
+"CanvasFeatures.ConstructPPMHeader" start time: Jun 17 23:58 +03
 Output:
 ----------------------------------------------------------
 Running main() from /home/mm/my-ray-tracer/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -488,8 +488,8 @@ P3
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"CanvasFeatures.ConstructPPMHeader" end time: Jun 13 23:55 +03
+"CanvasFeatures.ConstructPPMHeader" end time: Jun 17 23:58 +03
 "CanvasFeatures.ConstructPPMHeader" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-End testing: Jun 13 23:55 +03
+End testing: Jun 17 23:58 +03

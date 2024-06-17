@@ -139,10 +139,12 @@ CMakeFiles/ray-tracer-tests.dir/ray-tracer-tests.cc.o: /home/mm/my-ray-tracer/ra
   /usr/include/bits/wchar.h \
   /usr/include/bits/wctype-wchar.h \
   /usr/include/bits/wordsize.h \
+  /usr/include/c++/13.2.1/algorithm \
   /usr/include/c++/13.2.1/atomic \
   /usr/include/c++/13.2.1/backward/auto_ptr.h \
   /usr/include/c++/13.2.1/backward/binders.h \
   /usr/include/c++/13.2.1/bit \
+  /usr/include/c++/13.2.1/bits/algorithmfwd.h \
   /usr/include/c++/13.2.1/bits/align.h \
   /usr/include/c++/13.2.1/bits/alloc_traits.h \
   /usr/include/c++/13.2.1/bits/allocated_ptr.h \
@@ -200,10 +202,12 @@ CMakeFiles/ray-tracer-tests.dir/ray-tracer-tests.cc.o: /home/mm/my-ray-tracer/ra
   /usr/include/c++/13.2.1/bits/std_abs.h \
   /usr/include/c++/13.2.1/bits/std_function.h \
   /usr/include/c++/13.2.1/bits/std_mutex.h \
+  /usr/include/c++/13.2.1/bits/stl_algo.h \
   /usr/include/c++/13.2.1/bits/stl_algobase.h \
   /usr/include/c++/13.2.1/bits/stl_bvector.h \
   /usr/include/c++/13.2.1/bits/stl_construct.h \
   /usr/include/c++/13.2.1/bits/stl_function.h \
+  /usr/include/c++/13.2.1/bits/stl_heap.h \
   /usr/include/c++/13.2.1/bits/stl_iterator.h \
   /usr/include/c++/13.2.1/bits/stl_iterator_base_funcs.h \
   /usr/include/c++/13.2.1/bits/stl_iterator_base_types.h \
@@ -222,6 +226,7 @@ CMakeFiles/ray-tracer-tests.dir/ray-tracer-tests.cc.o: /home/mm/my-ray-tracer/ra
   /usr/include/c++/13.2.1/bits/streambuf.tcc \
   /usr/include/c++/13.2.1/bits/streambuf_iterator.h \
   /usr/include/c++/13.2.1/bits/stringfwd.h \
+  /usr/include/c++/13.2.1/bits/uniform_int_dist.h \
   /usr/include/c++/13.2.1/bits/unique_lock.h \
   /usr/include/c++/13.2.1/bits/unique_ptr.h \
   /usr/include/c++/13.2.1/bits/uses_allocator.h \
@@ -429,6 +434,12 @@ CMakeFiles/ray-tracer-tests.dir/ray-tracer-tests.cc.o: /home/mm/my-ray-tracer/ra
 
 /usr/include/c++/13.2.1/iterator:
 
+/usr/include/c++/13.2.1/istream:
+
+/usr/include/c++/13.2.1/iosfwd:
+
+/usr/include/c++/13.2.1/iomanip:
+
 /usr/include/bits/types/struct_tm.h:
 
 /usr/include/c++/13.2.1/bits/basic_ios.h:
@@ -507,8 +518,6 @@ CMakeFiles/ray-tracer-tests.dir/ray-tracer-tests.cc.o: /home/mm/my-ray-tracer/ra
 
 /usr/include/bits/types/error_t.h:
 
-/usr/include/c++/13.2.1/istream:
-
 /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/stdint.h:
 
 /usr/include/bits/sigstksz.h:
@@ -542,8 +551,6 @@ CMakeFiles/ray-tracer-tests.dir/ray-tracer-tests.cc.o: /home/mm/my-ray-tracer/ra
 /usr/include/asm-generic/int-ll64.h:
 
 /usr/include/c++/13.2.1/ext/concurrence.h:
-
-/usr/include/bits/types/struct_timespec.h:
 
 _deps/googletest-src/googletest/include/gtest/internal/custom/gtest-printers.h:
 
@@ -654,6 +661,14 @@ _deps/googletest-src/googletest/include/gtest/gtest-death-test.h:
 /usr/include/bits/sigcontext.h:
 
 /usr/include/bits/types/wint_t.h:
+
+/usr/include/c++/13.2.1/iostream:
+
+/usr/include/bits/types/mbstate_t.h:
+
+/usr/include/bits/signal_ext.h:
+
+_deps/googletest-src/googletest/include/gtest/internal/gtest-internal.h:
 
 /usr/include/bits/types/__sigset_t.h:
 
@@ -827,6 +842,8 @@ _deps/googletest-src/googletest/include/gtest/internal/gtest-param-util.h:
 
 /usr/include/bits/mathcalls-helper-functions.h:
 
+/usr/include/c++/13.2.1/algorithm:
+
 /usr/include/bits/mathcalls-narrow.h:
 
 /usr/include/c++/13.2.1/backward/binders.h:
@@ -859,6 +876,16 @@ _deps/googletest-src/googletest/include/gtest/internal/gtest-param-util.h:
 
 /usr/include/c++/13.2.1/bit:
 
+/usr/include/bits/types/struct_timespec.h:
+
+/usr/include/c++/13.2.1/bits/algorithmfwd.h:
+
+/usr/include/c++/13.2.1/bits/ptr_traits.h:
+
+/usr/include/c++/13.2.1/bits/stl_vector.h:
+
+/usr/include/c++/13.2.1/cstddef:
+
 /usr/include/c++/13.2.1/bits/atomic_lockfree_defines.h:
 
 /usr/include/c++/13.2.1/bits/stl_iterator.h:
@@ -876,8 +903,6 @@ _deps/googletest-src/googletest/include/gtest/internal/gtest-param-util.h:
 /usr/include/c++/13.2.1/bits/codecvt.h:
 
 /usr/include/c++/13.2.1/cstdlib:
-
-/usr/include/c++/13.2.1/iosfwd:
 
 /usr/include/c++/13.2.1/bits/cxxabi_init_exception.h:
 
@@ -909,6 +934,12 @@ _deps/googletest-src/googletest/include/gtest/internal/gtest-param-util.h:
 
 /usr/include/c++/13.2.1/bits/nested_exception.h:
 
+/usr/include/c++/13.2.1/bits/uniform_int_dist.h:
+
+/usr/include/c++/13.2.1/ios:
+
+/usr/include/c++/13.2.1/bits/ostream.tcc:
+
 /usr/include/bits/stdint-uintn.h:
 
 /usr/include/asm/errno.h:
@@ -916,12 +947,6 @@ _deps/googletest-src/googletest/include/gtest/internal/gtest-param-util.h:
 /usr/include/c++/13.2.1/condition_variable:
 
 /usr/include/c++/13.2.1/bits/parse_numbers.h:
-
-/usr/include/c++/13.2.1/bits/ptr_traits.h:
-
-/usr/include/c++/13.2.1/bits/stl_vector.h:
-
-/usr/include/c++/13.2.1/cstddef:
 
 /usr/include/c++/13.2.1/bits/quoted_string.h:
 
@@ -936,6 +961,8 @@ _deps/googletest-src/googletest/include/gtest/internal/gtest-param-util.h:
 /usr/include/wchar.h:
 
 /usr/include/c++/13.2.1/bits/std_function.h:
+
+/usr/include/c++/13.2.1/bits/stl_algo.h:
 
 _deps/googletest-src/googletest/include/gtest/gtest-printers.h:
 
@@ -954,6 +981,8 @@ _deps/googletest-src/googletest/include/gtest/gtest-printers.h:
 /usr/include/c++/13.2.1/functional:
 
 /usr/include/c++/13.2.1/bits/stl_function.h:
+
+/usr/include/c++/13.2.1/bits/stl_heap.h:
 
 /usr/include/c++/13.2.1/bits/stl_map.h:
 
@@ -990,17 +1019,3 @@ _deps/googletest-src/googletest/include/gtest/gtest-printers.h:
 /usr/include/c++/13.2.1/ext/string_conversions.h:
 
 /usr/include/c++/13.2.1/initializer_list:
-
-/usr/include/c++/13.2.1/iomanip:
-
-/usr/include/c++/13.2.1/bits/ostream.tcc:
-
-/usr/include/c++/13.2.1/ios:
-
-/usr/include/bits/types/mbstate_t.h:
-
-/usr/include/bits/signal_ext.h:
-
-_deps/googletest-src/googletest/include/gtest/internal/gtest-internal.h:
-
-/usr/include/c++/13.2.1/iostream:
